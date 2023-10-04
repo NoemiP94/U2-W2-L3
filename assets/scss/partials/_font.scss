@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+// mixin title-big
+// h1 -> 50px
+
+$fonts: (
+    text-li: 20px,
+    text-p: 18px,
+    text-button: 16px,
+);
+
+@each $name, $value in $fonts {
+    .fontS-#{$name}{
+        font-size: $value
+    }
+};
+

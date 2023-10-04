@@ -1,0 +1,45 @@
+//  mixin fade in + discesa dall'alto di qualche px
+
+// durata, punto inizio, punto fine, delay, nome -> parametri in ingresso
+// devono essere diversi per ogni elemento hero
+
+@mixin heroAnimation ($name, $duration, $timing-function, $delay){
+    
+    @keyframes #{$name} {
+        0% {
+            opacity: 0;
+            transform: translate(20px)
+        }
+        20% {
+            opacity:0.5;
+            transform: translate(15px)
+        }
+        50%{
+            opacity:0.8;
+            transform: translate(10px)
+        }
+        50%{
+            opacity:1;
+            transform: translate(5px)
+        }
+        100% {
+            opacity:1;
+            transform: translate(0)
+        }
+    }
+
+    
+}
+
+h1 {
+    @include heroAnimation (moving, 5s, linear, 0s)
+}
+p {
+    @include heroAnimation (moving, 6s, ease, 2s)
+}
+button {
+    @include heroAnimation (moving, 3s, ease-in, 4s)
+}
+section img {
+    @include heroAnimation (moving, 2s, ease-out, 6s)
+}

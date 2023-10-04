@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: darkblue;
+}
+
+body, button {
+  color: #f4f4f4;
+}
+
+section {
+  background-color: #640fc5;
+}
+
+body, button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fontS-text-li {
+  font-size: 20px;
+}
+
+.fontS-text-p {
+  font-size: 18px;
+}
+
+.fontS-text-button {
+  font-size: 16px;
+}
+
+.bg-color-first {
+  background-color: #0e6cff;
+}
+
+.bg-color-second {
+  background-color: #ff8700;
+}
+
+.bg-color-third {
+  background-color: #4caf50;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+section img {
+  border-radius: 10%;
+  box-shadow: 4px 4px 10px 3px #000000;
+  border: 2px solid #f4f4f4;
+}
+
+aside img {
+  border-radius: 10%;
+  box-shadow: 4px 4px 10px 3px #000000;
+  border: 2px solid #f4f4f4;
+}
+
+.displ-b {
+  display: block;
+}
+
+.displ-i {
+  display: inline;
+}
+
+.displ-f {
+  display: flex;
+}
+
+.padding-sm {
+  padding: 0.5em;
+}
+
+.paddingT-sm {
+  padding-top: 0.5em;
+}
+
+.paddingB-sm {
+  padding-bottom: 0.5em;
+}
+
+.paddingL-sm {
+  padding-left: 0.5em;
+}
+
+.paddingR-sm {
+  padding-right: 0.5em;
+}
+
+.padding-normal {
+  padding: 1em;
+}
+
+.paddingT-normal {
+  padding-top: 1em;
+}
+
+.paddingB-normal {
+  padding-bottom: 1em;
+}
+
+.paddingL-normal {
+  padding-left: 1em;
+}
+
+.paddingR-normal {
+  padding-right: 1em;
+}
+
+.padding-lg {
+  padding: 1.5em;
+}
+
+.paddingT-lg {
+  padding-top: 1.5em;
+}
+
+.paddingB-lg {
+  padding-bottom: 1.5em;
+}
+
+.paddingL-lg {
+  padding-left: 1.5em;
+}
+
+.paddingR-lg {
+  padding-right: 1.5em;
+}
+
+.padding-xl {
+  padding: 2em;
+}
+
+.paddingT-xl {
+  padding-top: 2em;
+}
+
+.paddingB-xl {
+  padding-bottom: 2em;
+}
+
+.paddingL-xl {
+  padding-left: 2em;
+}
+
+.paddingR-xl {
+  padding-right: 2em;
+}
+
+.padding-xxl {
+  padding: 3em;
+}
+
+.paddingT-xxl {
+  padding-top: 3em;
+}
+
+.paddingB-xxl {
+  padding-bottom: 3em;
+}
+
+.paddingL-xxl {
+  padding-left: 3em;
+}
+
+.paddingR-xxl {
+  padding-right: 3em;
+}
+
+.margin-sm {
+  margin: 0.5em;
+}
+
+.marginT-sm {
+  margin-top: 0.5em;
+}
+
+.marginB-sm {
+  margin-bottom: 0.5em;
+}
+
+.marginL-sm {
+  margin-left: 0.5em;
+}
+
+.marginR-sm {
+  margin-right: 0.5em;
+}
+
+.margin-normal {
+  margin: 1em;
+}
+
+.marginT-normal {
+  margin-top: 1em;
+}
+
+.marginB-normal {
+  margin-bottom: 1em;
+}
+
+.marginL-normal {
+  margin-left: 1em;
+}
+
+.marginR-normal {
+  margin-right: 1em;
+}
+
+.margin-lg {
+  margin: 1.5em;
+}
+
+.marginT-lg {
+  margin-top: 1.5em;
+}
+
+.marginB-lg {
+  margin-bottom: 1.5em;
+}
+
+.marginL-lg {
+  margin-left: 1.5em;
+}
+
+.marginR-lg {
+  margin-right: 1.5em;
+}
+
+.margin-xl {
+  margin: 2em;
+}
+
+.marginT-xl {
+  margin-top: 2em;
+}
+
+.marginB-xl {
+  margin-bottom: 2em;
+}
+
+.marginL-xl {
+  margin-left: 2em;
+}
+
+.marginR-xl {
+  margin-right: 2em;
+}
+
+.margin-xxl {
+  margin: 3em;
+}
+
+.marginT-xxl {
+  margin-top: 3em;
+}
+
+.marginB-xxl {
+  margin-bottom: 3em;
+}
+
+.marginL-xxl {
+  margin-left: 3em;
+}
+
+.marginR-xxl {
+  margin-right: 3em;
+}
+
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translate(20px);
+  }
+  20% {
+    opacity: 0.5;
+    transform: translate(15px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translate(20px);
+  }
+  20% {
+    opacity: 0.5;
+    transform: translate(15px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translate(20px);
+  }
+  20% {
+    opacity: 0.5;
+    transform: translate(15px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translate(20px);
+  }
+  20% {
+    opacity: 0.5;
+    transform: translate(15px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=style.css.map */

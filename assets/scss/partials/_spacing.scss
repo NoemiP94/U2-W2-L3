@@ -1,0 +1,58 @@
+// creare dinamicamente classi -> padding-(block|inline)-(sm|normal|md|lg|xl|xxl)
+//                             -> margin-(block|inline)-(sm|normal|md|lg|xl|xxl) 
+
+$display: (
+    b:block,
+    i:inline,
+    f:flex,
+);
+
+$sizes: (
+    sm: 0.5em,
+    normal: 1em,
+    lg: 1.5em,
+    xl: 2em,
+    xxl: 3em,
+);
+
+@each $name, $value in $display {
+    .displ-#{$name}{
+        display: $value
+    }
+};
+
+@each $name, $value in $sizes {
+    .padding-#{$name}{
+        padding: $value
+    }
+    .paddingT-#{$name}{
+        padding-top: $value
+    }
+    .paddingB-#{$name}{
+        padding-bottom: $value
+    }
+    .paddingL-#{$name}{
+        padding-left: $value
+    }
+    .paddingR-#{$name}{
+        padding-right: $value
+    }
+};
+
+@each $name, $value in $sizes {
+    .margin-#{$name}{
+        margin: $value
+    }
+    .marginT-#{$name}{
+        margin-top: $value
+    }
+    .marginB-#{$name}{
+        margin-bottom: $value
+    }
+    .marginL-#{$name}{
+        margin-left: $value
+    }
+    .marginR-#{$name}{
+        margin-right: $value
+    }
+};

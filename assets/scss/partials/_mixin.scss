@@ -1,0 +1,29 @@
+@mixin title-bg {
+    font-size: 50px,
+}
+
+h1 {
+    @include title-bg()
+}
+
+@mixin floating {
+    border-radius: 10%;
+    box-shadow: 4px 4px 10px 3px #000000;
+    border: 2px solid #f4f4f4;
+}
+
+section img {
+    @include floating;
+}
+
+aside img {
+    @include floating;
+}
+
+// griglia flex, num elementi per linea con un parametro in ingresso
+
+@mixin grid ($elements){
+    flex-wrap: nowrap;
+    
+    
+}
