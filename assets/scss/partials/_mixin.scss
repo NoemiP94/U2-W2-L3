@@ -23,7 +23,5 @@ aside img {
 // griglia flex, num elementi per linea con un parametro in ingresso
 
 @mixin grid ($elements){
-    flex-wrap: nowrap;
-    
-    
+    flex-basis: calc(100% / $elements);
 }

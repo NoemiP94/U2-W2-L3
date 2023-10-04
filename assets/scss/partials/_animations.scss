@@ -32,14 +32,14 @@
 }
 
 h1 {
-    @include heroAnimation (moving, 5s, linear, 0s)
+    @include heroAnimation (movingH1, 5s, linear, 0s)
 }
 p {
-    @include heroAnimation (moving, 6s, ease, 2s)
+    @include heroAnimation (movingP, 6s, ease, 2s)
 }
 button {
-    @include heroAnimation (moving, 3s, ease-in, 4s)
+    @include heroAnimation (movingButton, 3s, ease-in, 4s)
 }
 section img {
-    @include heroAnimation (moving, 2s, ease-out, 6s)
+    @include heroAnimation (movingImg, 2s, ease-out, 6s)
 }
